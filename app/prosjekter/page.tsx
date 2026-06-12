@@ -21,6 +21,7 @@ export default function Prosjekter() {
     return (
         <main>
             <h1>Prosjekter</h1>
+            <div className="flex flex-col gap-4 mt-6">
             {prosjekter.map((prosjekt) => (
                 <ProsjektKort 
                 key={prosjekt.tittel}
@@ -28,6 +29,7 @@ export default function Prosjekter() {
                 beskrivelse={prosjekt.beskrivelse}
                 />
                     ))}
+                    </div>
         </main>
     );
 
