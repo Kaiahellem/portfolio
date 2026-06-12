@@ -1,3 +1,4 @@
+import ProsjektKort from "../components/ProsjektKort";
 
 type Prosjekt = {
     tittel: string;
@@ -21,10 +22,11 @@ export default function Prosjekter() {
         <main>
             <h1>Prosjekter</h1>
             {prosjekter.map((prosjekt) => (
-                <div key={prosjekt.tittel}>
-                    <h2>{prosjekt.tittel}</h2>
-                    <p>{prosjekt.beskrivelse}</p>
-                    </div>
+                <ProsjektKort 
+                key={prosjekt.tittel}
+                tittel={prosjekt.tittel}
+                beskrivelse={prosjekt.beskrivelse}
+                />
                     ))}
         </main>
     );
