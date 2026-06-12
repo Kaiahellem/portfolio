@@ -1,3 +1,5 @@
+import { prosjekter } from "@/app/data";
+
 
 export default async function ProsjektDetalj({   
     params,
@@ -6,11 +8,12 @@ export default async function ProsjektDetalj({
 } ) {
 
     const { slug } = await params;
+    const prosjekt = prosjekter.find((p) => p.slug === slug)
 
     return (
         <main>
-            <h1>Et prosjekt</h1>
-            <p>Her kommer detaljer om prosjektet</p>
+            <h1>{prosjekt?.tittel}</h1>
+            <p>{prosjekt?.beskrivelse}</p>
         </main>
     );
 }

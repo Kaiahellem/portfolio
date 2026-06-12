@@ -1,23 +1,5 @@
 import ProsjektKort from "../components/ProsjektKort";
-
-type Prosjekt = {
-    slug: string;
-    tittel: string;
-    beskrivelse: string;
-};
-
-const prosjekter: Prosjekt [] = [
-    {
-    slug: "portefoljenettside",
-    tittel: "Porteføljenettside",
-    beskrivelse: "Min egen porteføljeside bygget med Next.js og Typescript.",
-    },
-    {
-        slug: "ute",
-        tittel: "Ute",
-        beskrivelse: "App for å enkelt finne restauranter og uteliv."
-    }
-];
+import { prosjekter } from "../data";
 
 export default function Prosjekter() {
     
