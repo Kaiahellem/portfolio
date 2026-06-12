@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import NavLenke from "./components/NavLenke";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -31,9 +31,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <div className="max-w-2xl mx-auto px-6 py-10 w-full">
         <nav className="flex gap-6 mb-12">
-          <Link href="/">Hjem</Link>
-          <Link href="/om">Om meg</Link>
-          <Link href="/prosjekter">Prosjekter</Link>
+          <NavLenke href="/">Hjem</NavLenke>
+          <NavLenke href="/om">Om meg</NavLenke>
+          <NavLenke href="/prosjekter">Prosjekter</NavLenke>
         </nav>
         {children}
         </div>
