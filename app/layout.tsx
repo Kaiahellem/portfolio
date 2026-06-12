@@ -32,6 +32,7 @@ export default function RootLayout({
         <nav>
           <Link href="/">Hjem</Link>
           <Link href="/om">Om meg</Link>
+          <Link href="/prosjekter">Prosjekter</Link>
         </nav>
         {children}
       </body>
