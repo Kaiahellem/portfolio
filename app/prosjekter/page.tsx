@@ -1,18 +1,18 @@
 import ProjectCard from "../components/ProjectCard";
-import { prosjekter } from "../data";
+import { projects } from "../data";
 
-export default function Prosjekter() {
+export default function Projects() {
     
     return (
         <main>
             <h1>Prosjekter</h1>
             <div className="flex flex-col gap-4 mt-6">
-            {prosjekter.map((prosjekt) => (
+            {projects.map((project) => (
                 <ProjectCard 
-                key={prosjekt.tittel}
-                slug={prosjekt.slug}
-                title={prosjekt.tittel}
-                description={prosjekt.beskrivelse}
+                key={project.title}
+                slug={project.slug}
+                title={project.title}
+                description={project.description}
                 />
                     ))}
                     </div>

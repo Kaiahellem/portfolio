@@ -1,19 +1,19 @@
 
-export type Prosjekt = {
+export type Project = {
     slug: string;
-    tittel: string;
-    beskrivelse: string;
+    title: string;
+    description: string;
 };
 
-export const prosjekter: Prosjekt[] = [
+export const projects: Project[] = [
     {
         slug: "portefoljenettside",
-        tittel: "Porteføljenettside",
-        beskrivelse: "Min egen porteføljeside bygget med Next.js og Typescript.",
+        title: "Porteføljenettside",
+        description: "Min egen porteføljeside bygget med Next.js og Typescript.",
     },
     {
         slug: "ute",
-        tittel: "Ute",
-        beskrivelse: "App for å enkelt finne restauranter og uteliv."
+        title: "Ute",
+        description: "App for å enkelt finne restauranter og uteliv."
     },
 ];

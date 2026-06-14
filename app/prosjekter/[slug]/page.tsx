@@ -1,4 +1,4 @@
-import { prosjekter } from "@/app/data";
+import { projects } from "@/app/data";
 
 
 export default async function ProsjektDetalj({   
@@ -8,12 +8,12 @@ export default async function ProsjektDetalj({
 } ) {
 
     const { slug } = await params;
-    const prosjekt = prosjekter.find((p) => p.slug === slug)
+    const prosjekt = projects.find((p) => p.slug === slug)
 
     return (
         <main>
-            <h1>{prosjekt?.tittel}</h1>
-            <p>{prosjekt?.beskrivelse}</p>
+            <h1>{prosjekt?.title}</h1>
+            <p>{prosjekt?.description}</p>
         </main>
     );
 }
