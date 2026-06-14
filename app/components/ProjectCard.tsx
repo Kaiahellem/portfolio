@@ -1,17 +1,17 @@
 import Link from "next/link";
 
-type ProsjektKortProps = {
+type ProjectCardProps = {
     slug: string;
-    tittel: string;
-    beskrivelse: string;
+    title: string;
+    description: string;
 };
 
-export default function ProsjektKort({slug, tittel, beskrivelse}: ProsjektKortProps) {
+export default function ProjectCard({slug, title: title, description: description}: ProjectCardProps) {
     return(
         <div className="border border-neutral-200 rounded-lg">
             <Link href={`/prosjekter/${slug}`} className="block border border-neutral-200 rounded-lg p-6 hover:border-neutral-400">
-            <h2>{tittel}</h2>
-            <p>{beskrivelse}</p>
+            <h2>{title}</h2>
+            <p>{description}</p>
             </Link>
         </div>
     );

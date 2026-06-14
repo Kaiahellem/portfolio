@@ -1,4 +1,4 @@
-import ProsjektKort from "../components/ProsjektKort";
+import ProjectCard from "../components/ProjectCard";
 import { prosjekter } from "../data";
 
 export default function Prosjekter() {
@@ -8,11 +8,11 @@ export default function Prosjekter() {
             <h1>Prosjekter</h1>
             <div className="flex flex-col gap-4 mt-6">
             {prosjekter.map((prosjekt) => (
-                <ProsjektKort 
+                <ProjectCard 
                 key={prosjekt.tittel}
                 slug={prosjekt.slug}
-                tittel={prosjekt.tittel}
-                beskrivelse={prosjekt.beskrivelse}
+                title={prosjekt.tittel}
+                description={prosjekt.beskrivelse}
                 />
                     ))}
                     </div>
