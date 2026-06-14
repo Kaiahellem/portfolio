@@ -9,7 +9,7 @@ type ProjectCardProps = {
 export default function ProjectCard({slug, title: title, description: description}: ProjectCardProps) {
     return(
         <div className="border border-neutral-200 rounded-lg">
-            <Link href={`/prosjekter/${slug}`} className="block border border-neutral-200 rounded-lg p-6 hover:border-neutral-400">
+            <Link href={`/projects/${slug}`} className="block border border-neutral-200 rounded-lg p-6 hover:border-neutral-400">
             <h2>{title}</h2>
             <p>{description}</p>
             </Link>
