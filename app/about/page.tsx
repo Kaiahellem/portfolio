@@ -1,5 +1,5 @@
 
-export default function Om() {
+export default function About() {
 return (
     <main>
         <h1>Om meg</h1>

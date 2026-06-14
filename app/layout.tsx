@@ -32,7 +32,7 @@ export default function RootLayout({
         <div className="max-w-2xl mx-auto px-6 py-10 w-full">
         <nav className="flex gap-6 mb-12">
           <NavLink href="/">Hjem</NavLink>
-          <NavLink href="/om">Om meg</NavLink>
+          <NavLink href="/About">Om meg</NavLink>
           <NavLink href="/prosjekter">Prosjekter</NavLink>
         </nav>
         {children}
