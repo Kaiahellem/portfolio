@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #7d2238;
+  --accent: #A00000;
 }
 
 @theme inline {
@@ -31,10 +31,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
   font-size: 1.5rem;
+}
+p {
+  font-size: 1.125rem;
 }
 

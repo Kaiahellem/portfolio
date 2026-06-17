@@ -29,13 +29,15 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} h-full antialiased font-sans`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="max-w-2xl mx-auto px-6 py-10 w-full">
-        <nav className="flex gap-6 mb-12">
-          <NavLink href="/">Hjem</NavLink>
-          <NavLink href="/about">Om meg</NavLink>
-          <NavLink href="/projects">Prosjekter</NavLink>
-          <NavLink href="/contact">Kontakt</NavLink>
-        </nav>
+        <div className="px-6 py-10 w-full">
+          <nav className="flex justify-between items-center max-w-5xl mx-auto mb-20">
+          <NavLink href="/">Kaia Hellem</NavLink>
+        <div className="flex gap-6">
+         <NavLink href="/about">Om meg</NavLink>
+    <NavLink href="/projects">Prosjekter</NavLink>
+    <NavLink href="/contact">Kontakt</NavLink>
+  </div>
+</nav>
         {children}
         </div>
       </body>
